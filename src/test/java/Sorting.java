@@ -17,6 +17,7 @@ public class Sorting {
      page.selectOption("select", "name,asc");
      page.waitForSelector("[data-test='product-name']");
      List<String> productNames= page.locator("[data-test='product-name']").allTextContents();
+     System.out.println(productNames);
      List<String> sortedNames= new ArrayList<>(productNames);
      Collections.sort(sortedNames);
      System.out.println(sortedNames);
