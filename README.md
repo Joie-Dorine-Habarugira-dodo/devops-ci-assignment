@@ -96,3 +96,69 @@ hp@Dorine MINGW64 ~/devops-ci-assignment (main)
 $ git branch
 * main
 ```
+# Part 3
+
+```
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (dev)
+$ git push -u origin dev
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment/pull/new/dev
+remote:
+To https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment.git
+ * [new branch]      dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+```
+# Part 4
+
+```
+hp@Dorine MINGW64 ~/devops-ci-assignment (dev)
+$ git checkout -b test
+Switched to a new branch 'test'
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (test)
+$ git push -u origin test
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 540 bytes | 540.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'test' on GitHub by visiting:
+remote:      https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment/pull/new/test
+remote:
+To https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment.git
+ * [new branch]      test -> test
+branch 'test' set up to track 'origin/test'.
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (test)
+$ git branch -a
+  dev
+  main
+* test
+  remotes/origin/dev
+  remotes/origin/main
+  remotes/origin/test
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (test)
+$ git checkout dev
+Switched to branch 'dev'
+Your branch is ahead of 'origin/dev' by 1 commit.
+  (use "git push" to publish your local commits)
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (dev)
+$ git branch -d test
+Deleted branch test (was aa7a67e).
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (dev)
+$ git push origin --delete test
+To https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment.git
+ - [deleted]         test
+```
