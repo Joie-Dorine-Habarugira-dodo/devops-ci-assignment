@@ -15,13 +15,13 @@ public class Sorting {
      Page page= browser.newPage();
      page.navigate("https://practicesoftwaretesting.com/");
      page.selectOption("select", "name,asc");
-     page.waitForSelector(".card-title");
-     List<String> productNames= page.locator(".card-title").allTextContents();
+     page.waitForSelector("[data-test='product-name']");
+     List<String> productNames= page.locator("[data-test='product-name']").allTextContents();
      List<String> sortedNames= new ArrayList<>(productNames);
      Collections.sort(sortedNames);
+     System.out.println(sortedNames);
      assertEquals(sortedNames, productNames);
      browser.close();
      playwright.close();
-
     }
 }
