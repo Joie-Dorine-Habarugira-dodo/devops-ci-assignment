@@ -96,3 +96,21 @@ hp@Dorine MINGW64 ~/devops-ci-assignment (main)
 $ git branch
 * main
 ```
+# Part 3
+
+```
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (dev)
+$ git push -u origin dev
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment/pull/new/dev
+remote:
+To https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment.git
+ * [new branch]      dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+```
