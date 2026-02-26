@@ -51,6 +51,48 @@ core.ignorecase=true
 
 # Part 2
 
-```cookie
+```
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git remote add origin https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment.git
 
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ touch README.md
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment.git'
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git branch
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git add .
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git commit -m "initial commit"
+[main (root-commit) 5ac2a04] initial commit
+ 6 files changed, 90 insertions(+)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/devops-ci-assignment.iml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 README.md
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.81 KiB | 464.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Joie-Dorine-Habarugira-dodo/devops-ci-assignment.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+hp@Dorine MINGW64 ~/devops-ci-assignment (main)
+$ git branch
+* main
 ```
